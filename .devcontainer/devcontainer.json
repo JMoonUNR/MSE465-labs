@@ -1,0 +1,10 @@
+{
+  "name": "MSE 465/665 Monte Carlo labs (OpenMC)",
+  "image": "openmc/openmc:latest",
+  "hostRequirements": { "cpus": 2 },
+  "postCreateCommand": "pip install --no-cache-dir ipykernel && openmc --version | head -1",
+  "customizations": {
+    "vscode": { "extensions": ["ms-python.python", "ms-toolsai.jupyter"] },
+    "codespaces": { "openFiles": ["README.md"] }
+  }
+}
